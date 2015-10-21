@@ -1,9 +1,9 @@
-\documentclass[11pt]{article} %Sets the default text size to 11pt and class to article.
+\documentclass[11pt]{article} %Sets the default text size to 11pt and class to article%
 %------------------------Dimensions--------------------------------------------
-\topmargin=-0.6in %length of margin at the top of the page (1 inch added by default)
+\topmargin=-50pt %length of margin at the top of the page (1 inch added by default)
 \oddsidemargin=-0.5in %length of margin on sides for odd pages
 \evensidemargin=0in %length of margin on sides for even pages
-\textwidth=7.0in %How wide you want your text to be
+\textwidth=550pt %How wide you want your text to be
 \marginparwidth=0.5in
 \headheight=0pt %1in margins at top and bottom (1 inch is added to this value by default)
 \headsep=0pt %Increase to increase white space in between headers and the top of the page
@@ -13,6 +13,7 @@
 %------------------------Packages-------------------------------------------------%
 
 \usepackage[urlbordercolor={1 1 1}]{hyperref}
+\usepackage{seqsplit}
 %-------------------------End Packages---------------------------------------------%
 
 \begin{document}
@@ -20,7 +21,6 @@
 \centerline{{\Huge \sc Joe Jean}}  %Makes whatever text you put in parenthesis move to the center
 %Prevents the following text from being indented
 %This is the same as a return in Latex
-\centerline{Abu Dhabi, UAE}
 \centerline{(971).50.106.7468 \textbar \hspace{2pt}\href{mailto:joe.jean@nyu.edu}{joe.jean@nyu.edu} \textbar \hspace{2pt}\url{www.joejean.net} \textbar \hspace{2pt}\url{https://github.com/joejean} } 
 \noindent
 \rule{\textwidth}{1pt}\bigskip
@@ -28,15 +28,23 @@
 
 \noindent{\Large \bf EDUCATION}\medskip
 
-\noindent \centerline{\normalsize \bf New York University Abu Dhabi \hfill \textbf{Expected May 2016} }
-Bachelor of Science in Computer Science. GPA: 3.47 / 4.00\\
+\noindent \centerline{\normalsize \bf New York University Abu Dhabi \hfill \textbf{May 2016}}
+Bachelor of Science in Computer Science. GPA: 3.37 / 4.00\\
 
 \noindent{\Large \bf EXPERIENCE} \medskip
 
-\noindent \centerline{\large \textbf{\textit{Recurser}}, \textbf {Recurse Center}, New York, USA \hfill \textbf{Summer 2015}}
-\begin{itemize}\itemsep-0.2em
+\noindent \centerline {\textbf{\textit{Junior Software Engineer}},\textbf { Namshi.com (Rocket Internet)}, Dubai, UAE \hfill \textbf{July 2016 - Present}}
+\begin{itemize}\itemsep-0.1em
+  \item Implementing new features and software products and maintaining existing ones. I use tools such as Golang, JavaScript, PHP, and Docker.
+\end{itemize}
+\noindent \centerline {\textbf{\textit{Back-End Developer Intern}},\textbf { CRISSP-AD} \hfill \textbf{February 2016 - June 2016}}
+\begin{itemize}\itemsep-0.1em
+  \item Built a real-time cyber security data monitoring and visualization platform at NYUAD's Center for Interdisciplinary Studies in Security and Privacy (CRISSP-AD). Among other technologies, I used Elasticsearch, Python, and Kibana. 
+\end{itemize}
+\noindent \centerline{\large \textbf{\textit{Developer}}, \textbf {Recurse Center}, New York, USA \hfill \textbf{Summer 2015}}
+\begin{itemize}\itemsep-0.4em
   \item Wrote a Lisp interpreter in C. 
-  \item Built a WYSGI web server in Python.
+  \item Built a WSGI web server in Python.
   \item Built a URL shortener using Python, Flask, SQLite and Bootstrap.
 \end{itemize}
 \noindent \centerline{\large \textbf{\textit{Summer Research Assistant}}, \textbf {NYU CIMS}, New York, USA \hfill \textbf{Summer 2014}}
@@ -64,10 +72,10 @@ Bachelor of Science in Computer Science. GPA: 3.47 / 4.00\\
 
 \noindent{\Large \bf SKILLS}
 \begin{itemize}\itemsep-0.2em
-  \item \textbf{Programming Languages:} Python, JavaScript, C.
-  \item \textbf{Web and Internet Technologies:} Node.js, Express, Flask, HTML, CSS, Bootstrap, JSON, Web API, jQuery, Knockout.js.
+  \item \textbf{Programming Languages:} Python, JavaScript, C, Java.
+  \item \textbf{Web and Internet Technologies:} Node.js, Express, Flask, Django, HTML, CSS, Bootstrap, JSON, Web API, jQuery, Knockout.js.
   \item \textbf{Databases:} MySQL, PostgreSQL, SQLite, MongoDB.
-  \item \textbf{Other Tools:} Windows (7, 8), Linux (Ubuntu), AWS, Heroku, CircleCI, Git, GitHub.
+  \item \textbf{Other Tools:} Windows, Linux (Ubuntu), AWS, Heroku, CircleCI, Git, GitHub.
   \item \textbf{Languages:} Fluent in English, French, and Creole.
 \end{itemize}
 \medskip
@@ -75,7 +83,7 @@ Bachelor of Science in Computer Science. GPA: 3.47 / 4.00\\
 \noindent{\Large \bf AWARDS} \medskip
 
 \noindent \centerline{\normalsize  \textbf {HACK2040 Hackathon}, New York, USA \hfill \textbf{June 2015}}
-\begin{itemize}\itemsep-0.2em
+\begin{itemize}\itemsep-0.35em
   \item Foursquare's Global Impact Prize
   \item CODE2040's Technically Difficult Prize
 \end{itemize}
